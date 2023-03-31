@@ -1,0 +1,13 @@
+# You must add your bash_profile.
+# source .bash_profile
+
+alias docker='podman'
+alias cons='podman ps -a'
+alias docker-compose='podman-compose'
+alias imgll='podman image ls'
+alias netls='podman network ls'
+alias volls='podman volume ls'
+alias pnc='podman network create'
+alias rmi='podman rmi $(podman images -a -q) '
+alias rmcons='docker rm -f $(docker ps -aq)'
+alias dpurge="docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -q)"
