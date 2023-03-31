@@ -1,7 +1,6 @@
 # You must add your bash_profile. Example :
 # podman-docker-alias.txt > ~/.bash_profile ; source ~/.bash_profile
 
-
 alias docker='podman'
 alias cons='podman ps -a'
 alias docker-compose='podman-compose'
